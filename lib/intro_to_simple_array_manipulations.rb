@@ -1,4 +1,4 @@
-def using__push(array, string)
+def using_push(array, string)
   array.push(string)
 end
 
@@ -25,11 +25,12 @@ def shift_with_args(array)
 end
 
 def using_concat(array, array2)
-  array + array2
+  array = array + array2
+  return array
 end
 
 def using_insert(array, element)
-  array.insert(element,4)
+  array.insert(4,element)
 end
 
 def using_uniq(array)
@@ -45,5 +46,5 @@ def using_delete(array, string)
 end
 
 def using_delete_at(array, int)
-  array.delete(int)
+  array.delete_at(int)
 end
